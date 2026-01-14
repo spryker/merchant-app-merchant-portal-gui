@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
+    standalone: false,
     selector: 'mp-payments',
     templateUrl: './payments.component.html',
     styleUrls: ['./payments.component.less'],
