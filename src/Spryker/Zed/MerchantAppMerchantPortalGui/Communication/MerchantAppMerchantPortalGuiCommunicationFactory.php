@@ -17,17 +17,11 @@ use Spryker\Zed\MerchantAppMerchantPortalGui\MerchantAppMerchantPortalGuiDepende
  */
 class MerchantAppMerchantPortalGuiCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\MerchantAppMerchantPortalGui\Dependency\Facade\MerchantAppMerchantPortalGuiToMerchantAppFacadeInterface
-     */
     public function getMerchantAppFacade(): MerchantAppMerchantPortalGuiToMerchantAppFacadeInterface
     {
         return $this->getProvidedDependency(MerchantAppMerchantPortalGuiDependencyProvider::FACADE_MERCHANT_APP);
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantAppMerchantPortalGui\Dependency\Facade\MerchantAppMerchantPortalGuiToMerchantUserFacadeInterface
-     */
     public function getMerchantUserFacade(): MerchantAppMerchantPortalGuiToMerchantUserFacadeInterface
     {
         return $this->getProvidedDependency(MerchantAppMerchantPortalGuiDependencyProvider::FACADE_MERCHANT_USER);

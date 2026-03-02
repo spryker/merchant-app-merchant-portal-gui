@@ -14,20 +14,10 @@ use Generated\Shared\Transfer\MerchantAppOnboardingInitializationResponseTransfe
 
 interface MerchantAppMerchantPortalGuiToMerchantAppFacadeInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\MerchantAppOnboardingCriteriaTransfer $merchantAppOnboardingCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantAppOnboardingCollectionTransfer
-     */
     public function getMerchantAppOnboardingCollection(
         MerchantAppOnboardingCriteriaTransfer $merchantAppOnboardingCriteriaTransfer
     ): MerchantAppOnboardingCollectionTransfer;
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantAppOnboardingInitializationRequestTransfer $merchantAppOnboardingInitializationRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantAppOnboardingInitializationResponseTransfer
-     */
     public function initializeMerchantAppOnboarding(
         MerchantAppOnboardingInitializationRequestTransfer $merchantAppOnboardingInitializationRequestTransfer
     ): MerchantAppOnboardingInitializationResponseTransfer;

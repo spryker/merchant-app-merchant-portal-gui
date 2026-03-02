@@ -109,11 +109,6 @@ class PaymentSettingsController extends AbstractController
         return [];
     }
 
-    /**
-     * @param string|null $status
-     *
-     * @return string
-     */
     protected function getActionButtonLabel(?string $status): string
     {
         return match ($status) {
@@ -122,11 +117,6 @@ class PaymentSettingsController extends AbstractController
         };
     }
 
-    /**
-     * @param string $status
-     *
-     * @return string
-     */
     protected function getColorForStatus(string $status): string
     {
         return match ($status) {

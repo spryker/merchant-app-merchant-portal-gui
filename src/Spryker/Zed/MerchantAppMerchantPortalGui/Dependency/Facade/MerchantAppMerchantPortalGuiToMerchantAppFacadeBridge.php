@@ -27,22 +27,12 @@ class MerchantAppMerchantPortalGuiToMerchantAppFacadeBridge implements MerchantA
         $this->merchantAppFacade = $merchantAppFacade;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantAppOnboardingCriteriaTransfer $merchantAppOnboardingCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantAppOnboardingCollectionTransfer
-     */
     public function getMerchantAppOnboardingCollection(
         MerchantAppOnboardingCriteriaTransfer $merchantAppOnboardingCriteriaTransfer
     ): MerchantAppOnboardingCollectionTransfer {
         return $this->merchantAppFacade->getMerchantAppOnboardingCollection($merchantAppOnboardingCriteriaTransfer);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantAppOnboardingInitializationRequestTransfer $merchantAppOnboardingInitializationRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantAppOnboardingInitializationResponseTransfer
-     */
     public function initializeMerchantAppOnboarding(
         MerchantAppOnboardingInitializationRequestTransfer $merchantAppOnboardingInitializationRequestTransfer
     ): MerchantAppOnboardingInitializationResponseTransfer {

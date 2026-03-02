@@ -27,11 +27,6 @@ class MerchantAppMerchantPortalGuiDependencyProvider extends AbstractBundleDepen
      */
     public const FACADE_MERCHANT_USER = 'FACADE_MERCHANT_USER';
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     public function provideCommunicationLayerDependencies(Container $container): Container
     {
         $container = $this->addMerchantAppFacade($container);
@@ -40,11 +35,6 @@ class MerchantAppMerchantPortalGuiDependencyProvider extends AbstractBundleDepen
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addMerchantAppFacade(Container $container): Container
     {
         $container->set(static::FACADE_MERCHANT_APP, function () use ($container) {
@@ -54,11 +44,6 @@ class MerchantAppMerchantPortalGuiDependencyProvider extends AbstractBundleDepen
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addMerchantUserFacade(Container $container): Container
     {
         $container->set(static::FACADE_MERCHANT_USER, function () use ($container) {

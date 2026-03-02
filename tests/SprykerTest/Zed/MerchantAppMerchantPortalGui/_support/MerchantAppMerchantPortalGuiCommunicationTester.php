@@ -77,9 +77,6 @@ class MerchantAppMerchantPortalGuiCommunicationTester extends Actor
         ],
     ];
 
-    /**
-     * @return void
-     */
     public function mockMerchantUser(): void
     {
         $merchantTransfer = $this->haveMerchant();
@@ -93,11 +90,6 @@ class MerchantAppMerchantPortalGuiCommunicationTester extends Actor
         $this->addToLocatorCache('merchantUser-facade', $merchantUserFacadeStub);
     }
 
-    /**
-     * @param array $onboardingDetails
-     *
-     * @return void
-     */
     public function mockMerchantAppOnboarding(array $onboardingDetails = []): void
     {
         $merchantOnboardingContentTransfer = new MerchantOnboardingContentTransfer();
@@ -137,41 +129,21 @@ class MerchantAppMerchantPortalGuiCommunicationTester extends Actor
         return $merchantOnboardingStates;
     }
 
-    /**
-     * @param string $status
-     *
-     * @return void
-     */
     public function seeOnboardingStatus(string $status): void
     {
         $this->see($status);
     }
 
-    /**
-     * @param string $displayText
-     *
-     * @return void
-     */
     public function seeDisplayText(string $displayText): void
     {
         $this->see($displayText);
     }
 
-    /**
-     * @param string $buttonText
-     *
-     * @return void
-     */
     public function seeButtonText(string $buttonText): void
     {
         $this->see($buttonText, 'web-spy-button-link');
     }
 
-    /**
-     * @param string $buttonInfo
-     *
-     * @return void
-     */
     public function seeButtonInfo(string $buttonInfo): void
     {
         $this->see($buttonInfo);

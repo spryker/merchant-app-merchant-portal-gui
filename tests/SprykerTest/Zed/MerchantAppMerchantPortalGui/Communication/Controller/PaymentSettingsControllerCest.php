@@ -27,11 +27,6 @@ use SprykerTest\Zed\MerchantAppMerchantPortalGui\MerchantAppMerchantPortalGuiCom
  */
 class PaymentSettingsControllerCest
 {
-    /**
-     * @param \SprykerTest\Zed\MerchantAppMerchantPortalGui\MerchantAppMerchantPortalGuiCommunicationTester $i
-     *
-     * @return void
-     */
     public function givenTheMarketplaceDoesNotUseAPaymentAppWhenAMerchantNavigatesToThePaymentSettingsPageThenAnEmptyStateDesignIsDisplayed(
         MerchantAppMerchantPortalGuiCommunicationTester $i
     ): void {
@@ -47,11 +42,6 @@ class PaymentSettingsControllerCest
         $i->see('This Marketplace does not have any Payment Provider activated from the Spryker App Composition Platform.');
     }
 
-    /**
-     * @param \SprykerTest\Zed\MerchantAppMerchantPortalGui\MerchantAppMerchantPortalGuiCommunicationTester $i
-     *
-     * @return void
-     */
     public function givenAMerchantHasNotStartedTheOnboardingProcessWhenAMerchantNavigatesToThePaymentSettingsPageThenTheStatusNotStartedIsDisplayedWithAMessageAndAStartOnboardingButton(
         MerchantAppMerchantPortalGuiCommunicationTester $i
     ): void {
@@ -67,11 +57,6 @@ class PaymentSettingsControllerCest
         $i->seeButtonInfo('Start Onboarding');
     }
 
-    /**
-     * @param \SprykerTest\Zed\MerchantAppMerchantPortalGui\MerchantAppMerchantPortalGuiCommunicationTester $i
-     *
-     * @return void
-     */
     public function givenAMerchantHasStartedTheOnboardingProcessAndItIsNotStartedWhenAMerchantNavigatesToThePaymentSettingsPageThenTheStatusNotStartedIsDisplayedWithAMessageAndAContinueOnboardingButton(
         MerchantAppMerchantPortalGuiCommunicationTester $i
     ): void {
@@ -89,11 +74,6 @@ class PaymentSettingsControllerCest
         $i->seeButtonText('Start Onboarding');
     }
 
-    /**
-     * @param \SprykerTest\Zed\MerchantAppMerchantPortalGui\MerchantAppMerchantPortalGuiCommunicationTester $i
-     *
-     * @return void
-     */
     public function validateUiTextsForStateEnabled(
         MerchantAppMerchantPortalGuiCommunicationTester $i
     ): void {
@@ -113,11 +93,6 @@ class PaymentSettingsControllerCest
         $i->seeButtonInfo($i->statusMapping[$status]['buttonInfo']);
     }
 
-    /**
-     * @param \SprykerTest\Zed\MerchantAppMerchantPortalGui\MerchantAppMerchantPortalGuiCommunicationTester $i
-     *
-     * @return void
-     */
     public function validateUiTextsForStateRestricted(
         MerchantAppMerchantPortalGuiCommunicationTester $i
     ): void {
@@ -137,11 +112,6 @@ class PaymentSettingsControllerCest
         $i->seeButtonInfo($i->statusMapping[$status]['buttonInfo']);
     }
 
-    /**
-     * @param \SprykerTest\Zed\MerchantAppMerchantPortalGui\MerchantAppMerchantPortalGuiCommunicationTester $i
-     *
-     * @return void
-     */
     public function validateUiTextsForStateRestrictedSoon(
         MerchantAppMerchantPortalGuiCommunicationTester $i
     ): void {
@@ -161,11 +131,6 @@ class PaymentSettingsControllerCest
         $i->seeButtonInfo($i->statusMapping[$status]['buttonInfo']);
     }
 
-    /**
-     * @param \SprykerTest\Zed\MerchantAppMerchantPortalGui\MerchantAppMerchantPortalGuiCommunicationTester $i
-     *
-     * @return void
-     */
     public function validateUiTextsForStatePending(
         MerchantAppMerchantPortalGuiCommunicationTester $i
     ): void {
@@ -185,11 +150,6 @@ class PaymentSettingsControllerCest
         $i->seeButtonInfo($i->statusMapping[$status]['buttonInfo']);
     }
 
-    /**
-     * @param \SprykerTest\Zed\MerchantAppMerchantPortalGui\MerchantAppMerchantPortalGuiCommunicationTester $i
-     *
-     * @return void
-     */
     public function validateUiTextsForStateRejected(
         MerchantAppMerchantPortalGuiCommunicationTester $i
     ): void {
