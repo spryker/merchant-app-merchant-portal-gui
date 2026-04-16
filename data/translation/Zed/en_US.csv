@@ -17,7 +17,7 @@ Rejected,Rejected
 "Continue Onboarding","Continue Onboarding"
 "You are required to provide more details to %s","You are required to provide more details to %s"
 "You are required to provide more details for your %s account. This step is required so that your payouts are not paused.","You are required to provide more details for your %s account. This step is required so that your payouts are not paused."
-"This Marketplace does not have any Payment Provider activated from the Spryker App Composition Platform.","This Marketplace does not have any Payment Provider activated from the Spryker App Composition Platform."
+"No payment providers enabled","No payment providers enabled"
 "Click the button below to get connected to the Marketplace account. This step is required for you to get your payout.","Click the button below to get connected to the Marketplace account. This step is required for you to get your payout."
 "Your %s account has been rejected by the Marketplace. Payouts are paused. Please contact the Marketplace to resolve this.","Your %s account has been rejected by the Marketplace. Payouts are paused. Please contact the Marketplace to resolve this."
 "Your %s account is disabled from the Marketplace account","Your %s account is disabled from the Marketplace account"

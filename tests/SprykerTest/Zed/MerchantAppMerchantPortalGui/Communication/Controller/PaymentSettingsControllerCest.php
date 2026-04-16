@@ -39,7 +39,7 @@ class PaymentSettingsControllerCest
         $i->addToLocatorCache('merchantApp-facade', $merchantAppFacadeStub);
 
         $i->amOnPage('/merchant-app-merchant-portal-gui/payment-settings');
-        $i->see('This Marketplace does not have any Payment Provider activated from the Spryker App Composition Platform.');
+        $i->see('No payment providers enabled');
     }
 
     public function givenAMerchantHasNotStartedTheOnboardingProcessWhenAMerchantNavigatesToThePaymentSettingsPageThenTheStatusNotStartedIsDisplayedWithAMessageAndAStartOnboardingButton(
