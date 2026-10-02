@@ -31,7 +31,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Spryker\\": "src/Spryker/"
+            "Spryker\\": "src/Spryker/",
+            "SprykerTest\\Zed\\MerchantAppMerchantPortalGui\\Helper\\": "tests/SprykerTest/Zed/MerchantAppMerchantPortalGui/_support/Helper/"
         }
     },
     "autoload-dev": {
